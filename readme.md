@@ -3,7 +3,7 @@
 
 编译内核打开USB FFS选项
 
-![kernel](pic/image.png)
+![kernel](pics/image.png)
 
 安装内核
 
@@ -20,5 +20,5 @@ sudo vim /boot/firmware/config.txt
 dtoverlay=dwc2,dr_mode=peripheral
 ```
 
-![config](pic/config.png)
+![config](pics/config.png)
 
