@@ -1,0 +1,17 @@
+#start
+[Unit]
+Description= Adbd for linux
+#Before=rockchip.service
+
+[Service]
+Type=forking
+User=root
+ExecStart=/data/adbd/adbd.sh start
+ExecStop=/data/adbd/adbd.sh stop
+ExecReload=/data/adbd/adbd.sh reload
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
+#end
